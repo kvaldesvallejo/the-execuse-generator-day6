@@ -9,7 +9,7 @@ window.onload = () => {
 };
 
 let randomNumber = number => {
-  return (randomNumber = Math.random() * number);
+  return Math.random() * number;
 };
 
 let generateExcuse = () => {
@@ -46,8 +46,8 @@ let generateExcuse = () => {
   //.length
   let whoI = Math.floor(randomNumber(who.length));
   let actionI = Math.floor(randomNumber(action.length));
-  let whatI = Math.floor(randomNumber(5));
-  let whenI = Math.floor(randomNumber(6));
+  let whatI = Math.floor(randomNumber(what.length));
+  let whenI = Math.floor(randomNumber(when.length));
 
   let excuse = who[whoI] + action[actionI] + what[whatI] + when[whenI];
   return excuse;
